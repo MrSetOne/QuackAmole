@@ -12,8 +12,11 @@
 
 - [X] Radio links nav
 
+### Extras
+
 - [ ] Form inputs outline
 
+- [ ] Marcado en rojo de campos vacíos
 
 ## Objetivos
 
