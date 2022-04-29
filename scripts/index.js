@@ -20,13 +20,17 @@ form.addEventListener("submit", (e) => {
     };
 
     // Inicio de las validaciones
-    if ((user.name == "") || (user.mail == "") || (user.gender == "") || (user.psw1 == "") || (user.psw2 == "")) {
+    if ((user.name != "") && (user.mail != "") && (user.gender != "") && (user.psw1 != "") && (user.psw2 != "")) {
+        if (regex.firstname.test(user.name) && regex.email.test(user.mail)) {
+            if (user.psw1 == user.psw2) {
+                //* Volcar a BD
+            } else {
+                //* Aqui hay que poner un alert indicando que las contraseñas no coinciden
+            };
+        } else {
+            //* Alert indicando que el nombre/email no tiene un formato correcto
+        };
+    } else {
         //* Aquí falta que se genere un alert indicando que se rellenen todos los campos
-    };
-    if (user.psw1 != user.psw2) {
-        //* Aqui hay que poner un alert indicando que las contraseñas no coinciden
-    }
-    if (regex.firstname.test(user.name) && regex.email.test(user.mail)) {
-        //* Si acepta el patrón se genera el codigo de dentro
     };
 })
