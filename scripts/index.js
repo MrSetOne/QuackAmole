@@ -19,16 +19,17 @@ form.addEventListener("submit", (e) => {
     let user = {
         name: document.getElementById("nombre").value,
         mail: document.getElementById("email").value,
-        // Falta el genero
+        psw1: document.getElementById("contraseña1").value,
+        psw2: document.getElementById("contraseña2").value,
+        gender: document.getElementById("genero").value,
     };
-    console.log(user.name);
-    console.log(user.mail);
+
     // Inicio de las validaciones
-    if ((user.name == "") || (user.mail == "")) { //Aqui falta la verificacion de genero
-        // Aquí falta que se genere un alert indicando un error
+    if ((user.name == "") || (user.mail == "") || (user.gender == "") || (user.psw1 == "") || (user.psw2 == "")) {
+        // Aquí falta que se genere un alert indicando que se rellenen todos los campos
     };
     if (regex.firstname.test(user.name) && regex.email.test(user.mail)) { //Aqui falta la verificacion de genero
         // Si acepta el patrón se genera el codigo de dentro
     };
-
+    console.log(user.gender)
 })
