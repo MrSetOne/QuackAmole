@@ -56,16 +56,12 @@
                     <input type="password" class="form-control" id="contraseña2">
                 </div>
             </div>
-            <legend>Genero</legend>
-            <div class="row mb-4">
-                <div class="col-sm-6">
-                    <input type="radio" class="btn-check" name="genero" id="genpato" autocomplete="off" value="pato">
-                    <label class="btn btn-outline-success mb-2 w-100 btn-lg" for="genpato">Pato</label>
-                </div>
-                <div class="col-sm-6">
-                    <input type="radio" class="btn-check" name="genero" id="genaguacate" value="aguacate" autocomplete="off">
-                    <label class="btn btn-outline-success btn-lg w-100" for="genaguacate">Aguacate</label>
-                </div>
+            <div class="row mb-4" style="padding: 1rem;">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected disabled>Elige tu género</option>
+                    <option value="1">Pato</option>
+                    <option value="2">Aguacate</option>
+                </select>
             </div>
             <button type="submit" class="btn btn btn-outline-success btn-lg w-100 p-3 mb-2 bg-success text-white border border-success" id="btn">¡Quackamoleame!</button>
         </form>
