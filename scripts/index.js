@@ -12,10 +12,10 @@ const regex = {
 // Libreria de sincronizacion de DB
 const dbSync = {
     toLocalStorage: () => {
-        return JSON.stringify(hotDB);
+        localStorage.db = JSON.stringify(hotDB);
     },
     toHotDB: () => {
-        return JSON.parse(localStorage.db)
+        hotDB = JSON.parse(localStorage.db)
     }
 }
 
