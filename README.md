@@ -17,29 +17,29 @@
 
 ## Objetivos
 
-- [ ] Implementa un NavBar con el que puedas moverte por las 2 vistas de la página
+- [X] Implementa un NavBar con el que puedas moverte por las 2 vistas de la página
 
-- [ ] Crea la vista Crear Usuario que contenga lo siguiente
+- [X] Crea la vista Crear Usuario que contenga lo siguiente
 
-    - [ ] Formulario con los siguientes campos
+    - [X] Formulario con los siguientes campos
 
-        - [ ] Nombre
+        - [X] Nombre
 
-        - [ ] Correo
+        - [X] Correo
 
-        - [ ] Contraseña 1
+        - [X] Contraseña 1
         
-        - [ ] Contraseña 2
+        - [X] Contraseña 2
 
     - [ ] Guarda la información recogida de cada uno de los usuarios en localStorage
 
-    - [ ] Implementa validación que obligue a rellenar todos los campos
+    - [X] Implementa validación que obligue a rellenar todos los campos
 
-    - [ ] Implementa una validación para el correo
+    - [X] Implementa una validación para el correo
 
-    - [ ] Implementa una validación que comprueba que la contraseña 1 es la misma que la contraseña 2
+    - [X] Implementa una validación que comprueba que la contraseña 1 es la misma que la contraseña 2
     
-    - [ ] Implementa una validación de contraseña
+    - [X] Implementa una validación de contraseña
 
     - [ ] Por cada validación que no se cumpla muestra un mensaje durante 3 segundos y que después desaparezca
 
@@ -47,7 +47,7 @@
 
     - [ ] Muestra los mensajes utilizando los alerts de bootstrap
 
-    - [ ] Crea la vista Usuarios la cual debe mostrar en cards de bootstrap los usuarios guardados en localStorage con los siguientes campos:
+- [ ] Crea la vista Usuarios la cual debe mostrar en cards de bootstrap los usuarios guardados en localStorage con los siguientes campos:
         - [ ] Nombre
 
         - [ ] Correo
