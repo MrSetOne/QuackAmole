@@ -19,9 +19,15 @@ const dbSync = {
     }
 }
 
+// En el caso de que la DB del Local Storage contenga algo la vuelca a hotDB
+if (localStorage.db != undefined) {
+    dbSync.toHotDB()
+}
+
+// Ejecucion del submit
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let user = {
+    let user = { //Recenpcion de valores
         name: document.getElementById("nombre").value,
         mail: document.getElementById("email").value,
         psw1: document.getElementById("contraseña1").value,
@@ -29,11 +35,12 @@ form.addEventListener("submit", (e) => {
         gender: document.getElementById("genero").value,
     };
 
-    // Inicio de las validaciones
+    // Validaciones
     if ((user.name != "") && (user.mail != "") && (user.gender != "") && (user.psw1 != "") && (user.psw2 != "")) {
         if (regex.firstname.test(user.name) && regex.email.test(user.mail)) {
             if (user.psw1 == user.psw2) {
-                //* Volcar a BD
+                hotDB.push(user)
+                dbSync.toLocalStorage()
             } else {
                 //* Aqui hay que poner un alert indicando que las contraseñas no coinciden
             };
