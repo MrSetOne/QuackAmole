@@ -9,6 +9,16 @@ const regex = {
     email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 }
 
+// Libreria de sincronizacion de DB
+const dbSync = {
+    toLocalStorage: () => {
+        return JSON.stringify(hotDB);
+    },
+    toHotDB: () => {
+        return JSON.parse(localStorage.db)
+    }
+}
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let user = {
