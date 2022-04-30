@@ -7,7 +7,14 @@ let hotDB = []
 // Libreria de verificaciones
 const regex = {
     firstname: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u,
-    email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    psw: {
+        whiteSpace: /^(?=.*\s)/,
+        uppercase: /^(?=.*[A-Z])/,
+        lowercase: /^(?=.*[a-z])/,
+        number: /^(?=.*[0-9])/,
+        length: /^.{10,16}$/,
+    },
 }
 
 // Libreria de sincronizacion de DB
