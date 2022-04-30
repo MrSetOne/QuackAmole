@@ -12,6 +12,8 @@
 
 - [X] Radio links nav
 
+- [ ] Testear sistema de contraseñas en NodeJs
+
 ### Extras
 
 - [ ] Form inputs outline
