@@ -46,11 +46,15 @@ form.addEventListener("submit", (e) => {
                 //* Aqui hay que poner un alert indicando que las contraseñas no coinciden
             };
         } else {
-            //* Alert indicando que el nombre/email no tiene un formato correcto
+            customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
+            customAlert.innerHTML = `El nombre/correo no tienen un formato correcto ＞﹏＜`
+            setTimeout(() => {
+                customAlert.className = "d-none alert alert-success"
+            }, 3000)
         };
     } else {
         customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-        customAlert.innerHTML = `Rellena todos los campos`
+        customAlert.innerHTML = `Rellena todos los campos (ㆆ_ㆆ)`
         setTimeout(() => {
             customAlert.className = "d-none alert alert-success"
         }, 3000)
