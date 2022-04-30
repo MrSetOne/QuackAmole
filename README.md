@@ -6,13 +6,13 @@
  
 - [X] Validacion de datos
 
-- [ ] Showme
+- [X] Showme
 
-- [ ] Alerts de Bootstrap
+- [X] Alerts de Bootstrap
 
 - [X] Radio links nav
 
-- [ ] Testear sistema de contraseñas en NodeJs
+- [X] Testear sistema de contraseñas en NodeJs
 
 ### Extras
 
