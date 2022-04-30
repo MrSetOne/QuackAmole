@@ -1,6 +1,6 @@
-# QuackAmole
+# <center>QuackAmole</center>
 
-## Indice
+# Indice
 
 * Sobre el proyecto
     * Instalacion y despliegue
@@ -21,33 +21,23 @@
         <!-- Lo que se te ocurra -->
 * Agradecimientos
 * Autores
+---
 
+# Sobre el proyecto
 
+## Instalacion y despliegue
 
+<!-- FALTA SUBIR LA PAGINA A NETLIFY Y LINKEARLA -->
 
+Para instalar esta pagina solo tienes que tener acceso a internet y ejecutar el comando en consola `git clone https://github.com/MrSetOne/QuackAmole.git`, tambien se puede acceder a través de este enlace. 
 
+## Tecnologias usadas
 
+Para esta pagina hemos utilizado HTML, JavaScript y Bootstrap, hemos evitado usar CSS para tratar de masterizar lo maximo posible Bootstrap.
 
+## Origen
 
-<!-- ## Nuesto
-
-- [X] Select
- 
-- [X] Validacion de datos
-
-- [X] Showme
-
-- [X] Alerts de Bootstrap
-
-- [X] Radio links nav
-
-- [X] Testear sistema de contraseñas en NodeJs
-
-### Extras
-
-- [ ] Form inputs outline
-
-- [ ] Marcado en rojo de campos vacíos
+Estre proyecto fue planteado como un ejercicio sobre la lectura de documentacion, adquisicion de nuevos conocimiento de forma autodidacta y manejo del local storage.
 
 ## Objetivos
 
@@ -84,4 +74,29 @@
 - [X] Crea la vista Usuarios la cual debe mostrar en cards de bootstrap los usuarios guardados en localStorage con los siguientes campos:
         - [X] Nombre
 
-        - [X] Correo -->
+        - [X] Correo
+
+## Concepto e inspiracion
+
+
+
+
+<!-- ## Nuesto
+
+- [X] Select
+ 
+- [X] Validacion de datos
+
+- [X] Showme
+
+- [X] Alerts de Bootstrap
+
+- [X] Radio links nav
+
+- [X] Testear sistema de contraseñas en NodeJs
+
+### Extras
+
+- [ ] Form inputs outline
+
+- [ ] Marcado en rojo de campos vacíos -->
