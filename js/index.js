@@ -43,7 +43,11 @@ form.addEventListener("submit", (e) => {
                 hotDB.push(user)
                 dbSync.toLocalStorage()
             } else {
-                //* Aqui hay que poner un alert indicando que las contraseñas no coinciden
+                customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
+                customAlert.innerHTML = `Las constraseñas no coinciden, por favor, comprueba que ambas coincidan (T_T)`
+                setTimeout(() => {
+                    customAlert.className = "d-none alert alert-success"
+                }, 3000)
             };
         } else {
             customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
