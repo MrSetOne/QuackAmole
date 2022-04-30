@@ -10,6 +10,7 @@
     * Concepto e inspiracion
 * Retos presentados
     * Nav responsive
+    * Implementacion de select en los formularios
     * Verificacion de formulario y control de flujo
         * Ifs anidados
         * Comprobaciones por regex
@@ -20,6 +21,8 @@
         <!-- Lo que se te ocurra -->
 * Agradecimientos
 * Autores
+
+
 
 
 
