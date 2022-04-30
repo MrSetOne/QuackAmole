@@ -1,6 +1,7 @@
 // Asignacion de variables
 const form = document.getElementById("form");
 const btn = document.getElementById("btn");
+const customAlert = document.getElementById("customAlert")
 let hotDB = []
 
 // Libreria de verificaciones
@@ -48,6 +49,10 @@ form.addEventListener("submit", (e) => {
             //* Alert indicando que el nombre/email no tiene un formato correcto
         };
     } else {
-        //* Aquí falta que se genere un alert indicando que se rellenen todos los campos
+        customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
+        customAlert.innerHTML = `Rellena todos los campos`
+        setTimeout(() => {
+            customAlert.className = "d-none alert alert-success"
+        }, 3000)
     };
 })
