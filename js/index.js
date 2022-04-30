@@ -2,7 +2,11 @@
 const form = document.getElementById("form");
 const btn = document.getElementById("btn");
 const customAlert = document.getElementById("customAlert")
+const userCards = document.getElementById("userCards")
+const pato = document.getElementById("duck")
+const aguacate = document.getElementById("avocado")
 let hotDB = []
+let arrayUsers = []
 
 // Libreria de verificaciones
 const regex = {
@@ -42,6 +46,39 @@ form.addEventListener("submit", (e) => {
         psw2: document.getElementById("contraseña2").value,
         gender: document.getElementById("genero").value,
     };
+
+
+function imgGender(){
+    if (gender == pato){
+        <img src="../assets/svg/duck-svgrepo-com.svg" style="height: 60px;" class="m-auto"></img>
+    }
+    else {
+        <img src="../assets/svg/avocado-svgrepo-com (1).svg" style="height: 60px;" class="m-auto"></img>
+    }
+}
+
+userCards.innerHTML = ""
+for(let user of users){
+    userCards.innerHTML += `
+    <div class="container " style="max-width: 550px;">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center align-items-center" style="height: 175px; background: hsla(151, 56%, 36%, 1); background: radial-gradient(circle, hsla(151, 56%, 36%, 1) 0%, hsla(152, 32%, 65%, 1) 100%); background: -moz-radial-gradient(circle, hsla(151, 56%, 36%, 1) 0%, hsla(152, 32%, 65%, 1) 100%); background: -webkit-radial-gradient(circle, hsla(151, 56%, 36%, 1) 0%, hsla(152, 32%, 65%, 1) 100%); filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#288F5E', endColorstr='#8BC3A9', GradientType=1);"></div>
+                <div class="col-md-8">
+                    ${imgGender()}
+                    <div class="card-body">
+                        <h5 class="card-title">${user.name}</h5>
+                        <p class="card-text">${user.mail}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+}
+
+localStorage.setItem('key', JSON.stringify(users))
+let arrayUsers = JSON.parse(localStorage.getItem('key'))
 
     // Validaciones
     if ((users.name != "") && (users.mail != "") && (users.gender != "") && (users.psw1 != "") && (users.psw2 != "")) {
