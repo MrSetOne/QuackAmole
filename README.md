@@ -1,6 +1,32 @@
 # QuackAmole
 
-## Nuesto
+## Indice
+
+* Sobre el proyecto
+    * Instalacion y despliegue
+    * Tecnologias usadas
+    * Origen
+    * Objetivos
+    * Concepto e inspiracion
+* Retos presentados
+    * Nav responsive
+    * Verificacion de formulario y control de flujo
+        * Ifs anidados
+        * Comprobaciones por regex
+    * Dificultades con BootStrap
+        * Alerts de Bootstrap <!-- Hay que añadir agradecimientos a German y Vanessa -->
+        * Colores
+        * Estrucutras
+        <!-- Lo que se te ocurra -->
+* Agradecimientos
+* Autores
+
+
+
+
+
+
+<!-- ## Nuesto
 
 - [X] Select
  
@@ -55,4 +81,4 @@
 - [X] Crea la vista Usuarios la cual debe mostrar en cards de bootstrap los usuarios guardados en localStorage con los siguientes campos:
         - [X] Nombre
 
-        - [X] Correo
+        - [X] Correo -->
