@@ -28,7 +28,7 @@ if (localStorage.db != undefined) {
 // Ejecucion del submit
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let user = { //Recenpcion de valores
+    let users = { //Recenpcion de valores
         name: document.getElementById("nombre").value,
         mail: document.getElementById("email").value,
         psw1: document.getElementById("contraseña1").value,
@@ -37,10 +37,10 @@ form.addEventListener("submit", (e) => {
     };
 
     // Validaciones
-    if ((user.name != "") && (user.mail != "") && (user.gender != "") && (user.psw1 != "") && (user.psw2 != "")) {
-        if (regex.firstname.test(user.name) && regex.email.test(user.mail)) {
-            if (user.psw1 == user.psw2) {
-                hotDB.push(user)
+    if ((users.name != "") && (users.mail != "") && (users.gender != "") && (users.psw1 != "") && (users.psw2 != "")) {
+        if (regex.firstname.test(users.name) && regex.email.test(users.mail)) {
+            if (users.psw1 == users.psw2) {
+                hotDB.push(users)
                 dbSync.toLocalStorage()
             } else {
                 customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
