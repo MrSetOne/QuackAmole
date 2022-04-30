@@ -21,7 +21,6 @@
         <!-- Lo que se te ocurra -->
 * Agradecimientos
 * Autores
----
 
 # Sobre el proyecto
 
@@ -72,9 +71,10 @@ Estre proyecto fue planteado como un ejercicio sobre la lectura de documentacion
     - [X] Muestra los mensajes utilizando los alerts de bootstrap
 
 - [X] Crea la vista Usuarios la cual debe mostrar en cards de bootstrap los usuarios guardados en localStorage con los siguientes campos:
-        - [X] Nombre
 
-        - [X] Correo
+    - [X] Nombre
+
+    - [X] Correo
 
 ## Concepto e inspiracion
 
