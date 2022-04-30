@@ -11,7 +11,14 @@ let arrayUsers = []
 // Libreria de verificaciones
 const regex = {
     firstname: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u,
-    email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    psw: {
+        whiteSpace: /^(?=.*\s)/,
+        uppercase: /^(?=.*[A-Z])/,
+        lowercase: /^(?=.*[a-z])/,
+        number: /^(?=.*[0-9])/,
+        length: /^.{10,16}$/,
+    },
 }
 
 // Libreria de sincronizacion de DB
@@ -79,8 +86,22 @@ let arrayUsers = JSON.parse(localStorage.getItem('key'))
             if (users.psw1 == users.psw2) {
                 hotDB.push(users)
                 dbSync.toLocalStorage()
+                customAlert.className = "d-grid alert w-50 m-auto alert-success text-center fixed-bottom mb-5"
+                customAlert.innerHTML = `<h4>¡Has sido Quackamoleado con exito!</h4><p>Si quieres ver todos los Quackamoles <a href="./pages/db.html" class="alert-link">pincha aquí</a></p>`
+                setTimeout(() => {
+                    customAlert.className = "d-none alert alert-success"
+                }, 6000)
+                document.getElementById("nombre").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("contraseña1").value = "";
+                document.getElementById("contraseña2").value = "";
+                document.getElementById("genero").value = "";
             } else {
-                //* Aqui hay que poner un alert indicando que las contraseñas no coinciden
+                customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
+                customAlert.innerHTML = `Las constraseñas no coinciden, por favor, comprueba que ambas coincidan (T_T)`
+                setTimeout(() => {
+                    customAlert.className = "d-none alert alert-success"
+                }, 3000)
             };
         } else {
             customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
