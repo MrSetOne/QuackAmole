@@ -36,7 +36,7 @@
         
         - [X] Contraseña 2
 
-    - [ ] Guarda la información recogida de cada uno de los usuarios en localStorage
+    - [X] Guarda la información recogida de cada uno de los usuarios en localStorage
 
     - [X] Implementa validación que obligue a rellenar todos los campos
 
@@ -46,13 +46,13 @@
     
     - [X] Implementa una validación de contraseña
 
-    - [ ] Por cada validación que no se cumpla muestra un mensaje durante 3 segundos y que después desaparezca
+    - [X] Por cada validación que no se cumpla muestra un mensaje durante 3 segundos y que después desaparezca
 
-    - [ ] Al terminar de rellenar los datos del formulario correctamente muestra un mensaje durante 3 segundos que muestre “Usuario creado correctamente” y redirige a la vista Usuarios.
+    - [X] Al terminar de rellenar los datos del formulario correctamente muestra un mensaje durante 3 segundos que muestre “Usuario creado correctamente” y redirige a la vista Usuarios.
 
-    - [ ] Muestra los mensajes utilizando los alerts de bootstrap
+    - [X] Muestra los mensajes utilizando los alerts de bootstrap
 
-- [ ] Crea la vista Usuarios la cual debe mostrar en cards de bootstrap los usuarios guardados en localStorage con los siguientes campos:
-        - [ ] Nombre
+- [X] Crea la vista Usuarios la cual debe mostrar en cards de bootstrap los usuarios guardados en localStorage con los siguientes campos:
+        - [X] Nombre
 
-        - [ ] Correo
+        - [X] Correo
