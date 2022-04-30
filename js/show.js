@@ -7,8 +7,6 @@ function toHotDB() {
     hotDB = JSON.parse(localStorage.db)
 }
 
-
-
 function printCards() {
     toHotDB()
     for (const user of hotDB) {
