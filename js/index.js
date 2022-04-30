@@ -42,6 +42,16 @@ form.addEventListener("submit", (e) => {
             if (users.psw1 == users.psw2) {
                 hotDB.push(users)
                 dbSync.toLocalStorage()
+                customAlert.className = "d-grid alert w-50 m-auto alert-success text-center fixed-bottom mb-5"
+                customAlert.innerHTML = `<h4>¡Has sido Quackamoleado con exito!</h4><p>Si quieres ver todos los Quackamoles <a href="./pages/db.html" class="alert-link">pincha aquí</a></p>`
+                setTimeout(() => {
+                    customAlert.className = "d-none alert alert-success"
+                }, 6000)
+                document.getElementById("nombre").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("contraseña1").value = "";
+                document.getElementById("contraseña2").value = "";
+                document.getElementById("genero").value = "";
             } else {
                 customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
                 customAlert.innerHTML = `Las constraseñas no coinciden, por favor, comprueba que ambas coincidan (T_T)`
