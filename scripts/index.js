@@ -21,7 +21,7 @@ const dbSync = {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let user = {
+    let users = {
         name: document.getElementById("nombre").value,
         mail: document.getElementById("email").value,
         psw1: document.getElementById("contraseña1").value,
@@ -29,10 +29,12 @@ form.addEventListener("submit", (e) => {
         gender: document.getElementById("genero").value,
     };
 
+// for (const user of users)
+
     // Inicio de las validaciones
-    if ((user.name != "") && (user.mail != "") && (user.gender != "") && (user.psw1 != "") && (user.psw2 != "")) {
-        if (regex.firstname.test(user.name) && regex.email.test(user.mail)) {
-            if (user.psw1 == user.psw2) {
+    if ((users.name != "") && (users.mail != "") && (users.gender != "") && (users.psw1 != "") && (users.psw2 != "")) {
+        if (regex.firstname.test(users.name) && regex.email.test(users.mail)) {
+            if (users.psw1 == users.psw2) {
                 //* Volcar a BD
             } else {
                 //* Aqui hay que poner un alert indicando que las contraseñas no coinciden
@@ -41,6 +43,13 @@ form.addEventListener("submit", (e) => {
             //* Alert indicando que el nombre/email no tiene un formato correcto
         };
     } else {
-        //* Aquí falta que se genere un alert indicando que se rellenen todos los campos
+        <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                Parece que te has olvidado de rellenar algún campo 🙈
+                </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
     };
 })
