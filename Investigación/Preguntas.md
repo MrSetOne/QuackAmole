@@ -14,6 +14,7 @@ Crea una presentación de bootstrap que solvente las siguientes cuestiones:
 * Ventajas y desventajas de usar bootstrap:
 
     Como comentábamos, Bootstrap te ofrece la posibilidad de crear el front-end de tu aplicación web de forma sencilla y gratuita con una gran variedad de componentes a los que puedes acceder desde su código y simplemente copiarlos y pegarlos en el tuyo.
+
     A su vez, aunque ofrezcan una gran cantidad de diversos componentes, las opciones de personalizar cada uno de ellos son limitadas. Quizá te ofrecen un pequeño grupo de colores o un par de tamaños diferentes entre los que puedes elegir, pero si buscas algo muy específico para uno de esos componentes, personalizarlo puede convertirse en un procedimiento un tanto tedioso.
 
 * Cómo instalar o implementar bootstrap en mi proyecto:
@@ -72,3 +73,7 @@ Crea una presentación de bootstrap que solvente las siguientes cuestiones:
 Extra:
 
 * Implementa nuevos puntos sobre bootstrap que hayas descubierto durante tu investigación y creas que son importantes.
+
+    Bootstrap dispone de una gran cantida de componentes muy utiles y con un aspecto impecable, algunos de los mas destacables son los siguientes:
+
+    * Spinners ![spinner](../assets/images/M_Captura%201.png)
