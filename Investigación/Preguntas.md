@@ -19,8 +19,27 @@ Crea una presentación de bootstrap que solvente las siguientes cuestiones:
 
 * Cómo instalar o implementar bootstrap en mi proyecto:
 
-    Bootstrap al fin y al cabo es (de forma muy simplificada) un documento de CSS, así que, al igual que en el resto de nuestros proyectos, lo primero que hay que hacer es conectar dicho documento de CSS a nuestro HTML copiando el link (<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">) en el head del documento HTML en el que vayamos a trabajar.
+    Bootstrap al fin y al cabo es (de forma muy simplificada) un documento de CSS, así que, al igual que en el resto de nuestros proyectos, lo primero que hay que hacer es conectar dicho documento de CSS a nuestro HTML copiando la hoja de estilos en el head y su script al final del body en el documento HTML en el que vayamos a trabajar. Ejemplo:
+
+    ``` HTML
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <title>Hello, world!</title>
+        </head>
+        <body>
+            <!-- Bootstrap JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </body>
+    </html>
+    ```
+
     Los siguientes pasos serían ir copiando y pegando el codigo de cada componente que queramos implementar, los cuales podemos encontrar en su índice o a través del buscador que encontramos arriba a la derecha.
+
     ![foto](../assets/images/Captura%201.PNG)
 
 * ¿Se puede implementar responsive con Bootstrap? Si es asi podrías explicar cómo funciona y poner un ejemplo.
@@ -37,21 +56,107 @@ Crea una presentación de bootstrap que solvente las siguientes cuestiones:
 
 * ¿Cuáles son los diferentes tipos de botones en bootstrap? Pon ejemplos.
 
-    Bootstrap ofrece gran variedad de alternativas al botón básico. Puedes cambiar el tamaño o el color (primera imagen), poner un botón desactivado (segunda imagen) u optar por un block button (tercera imagen) los cuales te permiten tener mucho más control sobre su tamaño y posición. No solo eso, si no que en _Button group_ también muestra más opciones para aplicar a un conjunto de botones en vez de a uno solo, como, por ejemplo, para ordenarlos verticalmente (cuarta imagen).
-    ![foto](../assets/images/Captura%204.PNG)
-    ![foto](../assets/images/Captura%205.PNG)
-    ![foto](../assets/images/Captura%206.PNG)
-    ![foto](../assets/images/Captura%207.PNG)
+    Bootstrap ofrece gran variedad de alternativas al botón básico, algunos de ellos son:
+    
+    * Cambiar el color:
+
+    ![Paleta_de_colores](../assets/images/M_Captura%204.png)
+    ``` HTML
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+    ```
+
+    * Cambiar el tamaño:
+    
+    ![Tamaños_Grandes](../assets/images/M_Captura%205.png)
+    ``` HTML
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+    ```
+
+    ![Tamaños_Pequeños](../assets/images/M_Captura%206.png)
+
+    ``` HTML
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+    ```
+
+    * Poner un botón desactivado:
+    
+    ![Boton_Desactivado](../assets/images/M_Captura%207.png)
+
+    ``` HTML
+    <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+    <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+    ```
+    * Estilo block button (Basado en el sistema de Grid de Bootstrap):
+
+    ![Block_Btn](../assets/images/M_Captura%208.png)
+
+    ``` HTML
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+    ```
+
+    * Bootstrap dispone de una amplia variedad de estos botones, para mas informacion puedes entrar a la documentación [este enlace](https://getbootstrap.com/docs/5.1/components/buttons/), tambien dispone de sistemas de agrupacion de botones, puedes ver mas informacion [aquí](https://getbootstrap.com/docs/5.1/components/button-group/)
 
 * ¿Qué es un Carousel de bootstrap? Pon un ejemplo.
 
     Un Carousel es un conjunto de imágenes las cuales van apareciendo una tras otra de forma cíclica. Bootstrap además te ofrece la posibilidad de incluir indicadores y/o controles de anterior/siguiente así como diferentes opciones de transición entre dichas imágenes.
     En cuanto a las transiciones, Bootstrap tiene de forma predefinida Slides only (una imagen se desliza de derecha a izquierda para sustituir a la anterior), pero si queremos, por ejemplo, que la primera imagen vaya desapareciendo progresivamente mientras la siguiente va apareciendo de la misma forma, podemos implementar un _Crossfade (.carousel-fade)_.
 
+    Este es un ejemplo de un carousel con botones de navegacion:
+
+    ![Carousel](../assets/images/M_Captura%209.png)
+
+    ``` HTML
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    ```
+    Para mas informacion puedes hacer [click aquí](https://getbootstrap.com/docs/5.1/components/carousel/)
+
 * ¿Qué es un spinner de bootstrap? Pon un ejemplo.
 
     Este componente es la animación de una circunferencia incompleta que gira sobre sí misma indicando el estado de carga de otro componente o de la aplicación en sí. Bootstrap ofrece opciones en cuanto al color y tamaño y también otro modelo diferente llamado _Growing spinner_ que cumple con la misma función pero con otra apariencia.
-    (Ver aquí: https://getbootstrap.com/docs/5.1/components/spinners/#growing-spinner)
+
+    Este es un ejemplo de un spinner de bootstrap:
+
+    ![Snpinner](../assets/images/Animation.gif)
+    ``` HTML
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    ```
+    Para mas informacion puedes hacer [click aquí](https://getbootstrap.com/docs/5.1/components/spinners/)
 
 * ¿Qué es un navBar de bootstrap? Pon un ejemplo.
 
