@@ -28,9 +28,7 @@
 
 ### Instalacion y despliegue
 
-<!-- FALTA SUBIR LA PAGINA A NETLIFY Y LINKEARLA -->
-
-Para instalar esta pagina solo tienes que tener acceso a internet y ejecutar el comando en consola `git clone https://github.com/MrSetOne/QuackAmole.git`, tambien se puede acceder a través de este enlace: 
+Para instalar esta pagina solo tienes que tener acceso a internet y ejecutar el comando en consola `git clone https://github.com/MrSetOne/QuackAmole.git`, tambien se puede acceder a través de [este enlace](https://quackamole.netlify.app/)
 
 ### Tecnologias usadas
 
@@ -79,13 +77,16 @@ Estre proyecto fue planteado como un ejercicio sobre la lectura de documentacion
     - [X] Correo
 
 ### Concepto e inspiracion
-<!-- Rebeca: Yo aquí no sé qué poner -->
 
 ## Retos presentados
 
 ### Nav responsive
 
+A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecia la documentacion no terminaban de encajar del todo con lo que teniamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde mas se nos complicó es a la hora de poner el "Burger Menu" ya que no entendiamos del todo bien como funcionaba la propiedad `Toggler`.
+
 ### Implementacion de select en los formularios
+
+Ninguno de los dos habiamos usado los imputs de tipo select en un formulario funcional, con lo cual fué un reto descubrir como extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
 
 ### Verificacion de formulario y control de flujo
 * Ifs anidados:
