@@ -93,15 +93,15 @@ También, en el formulario se puede observar como hemos acabado con la cuestión
 
 A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecía la documentación no terminaban de encajar del todo con lo que teníamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde más se nos complicó es a la hora de poner el "Burger Menu" ya que no entendíamos del todo bien cómo funcionaba la propiedad `Toggler`.
 
-### Implementacion de select en los formularios
+### Implementación de select en los formularios
 
-Ninguno de los dos habiamos usado los imputs de tipo select en un formulario funcional, con lo cual fué un reto descubrir como extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
+Ninguno de los dos habíamos usado los imputs de tipo select en un formulario funcional, con lo cual fue un reto descubrir cómo extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
 
-### Verificacion de formulario y control de flujo
+### Verificación de formulario y control de flujo
 
 * Ifs anidados:
 
-Esta ha sido la primera vez que tenemos que hacer una verificacion de formulario, para ello hemos usado una serie de ifs anidados, cada uno con su respectivo else de salida, con ello conseguimos que se analicen cada una de las condiciones, si en cualquiera de los puntos se devuelve false, no se envía el resultado del formulario al LocalStorage y te devuelve un alert con el motivo por el que ocurre esto.
+Esta ha sido la primera vez que tenemos que hacer una verificación de formulario, para ello hemos usado una serie de ifs anidados, cada uno con su respectivo else de salida, con ello conseguimos que se analicen cada una de las condiciones, si en cualquiera de los puntos se devuelve false, no se envía el resultado del formulario al LocalStorage y te devuelve un alert con el motivo por el que ocurre esto.
 
 * Comprobaciones por regex:
 
@@ -125,22 +125,22 @@ Una de las grandes virtudes de esta librería es que te permite modularizar la v
 ### Dificultades con BootStrap
 * Alerts de Bootstrap:
 
-Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguiamos que funcionaran, por suerte unos compañeros necesitaban ayuda con su codigo e hicimos intercambio de conocimientos :wink:
+Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguíamos que funcionaran, por suerte unos compañeros necesitaban ayuda con su código también e hicimos intercambio de conocimientos :wink:
 
 * Colores:
 
-    El outline de los inputs del formulario son azules y no hemos encontrado la manera de cambiarlo a verde como sí sucede en el botón. Esto es debido a que la clase que se utiliza para cambiar el color de este aspecto (class="btn btn-outline-secondary") es solo aplicable a type="button" y no responde cuando la insertas en un input sea del tipo que sea.
+El outline de los inputs del formulario son azules y no hemos encontrado la manera de cambiarlo a verde como sí sucede en el botón. Esto es debido a que la clase que se utiliza para cambiar el color de este aspecto (class="btn btn-outline-secondary") es solo aplicable a type="button" y no responde cuando la insertas en un input sea del tipo que sea.
 
 * Posición elementos del navBar:
     
-    Otra de las cosas que no hemos podido solucionar debido a la limitación de personalización que ofrece Bootstrap es centrar horizontalmente los links de la barra de navegación manteniendo su responsividad.
+Otra de las cosas que no hemos podido solucionar debido a la limitación de personalización que ofrece Bootstrap es centrar horizontalmente los links de la barra de navegación manteniendo su responsividad.
 
 ## Agradecimientos
 
-Un agradecimiento especial a [Germán](https://github.com/Molerog) y [Vanessa](https://github.com/vaneebg) por el intercambio de ideas/conocimientos, si no fuese sin ellos el sistema de alerts aun estaria en pañales.
+Un agradecimiento especial a [Germán](https://github.com/Molerog) y [Vanessa](https://github.com/vaneebg) por el intercambio de ideas/conocimientos, si no fuese por ellos, el sistema de alerts aún estaría en pañales.
 
 ## Autores
 
-### [Michael](https://github.com/MrSetOne)
+### [Michael](https://github.com/MrSetOne) 🥑
 
-### [Rebeca](https://github.com/RebecaASuesta)
+### [Rebeca](https://github.com/RebecaASuesta) 🦆
