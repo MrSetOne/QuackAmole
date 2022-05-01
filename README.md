@@ -8,12 +8,14 @@
     * Origen
     * Objetivos
     * Concepto e inspiracion
+
 * Retos presentados
     * Nav responsive
     * Implementacion de select en los formularios
     * Verificacion de formulario y control de flujo
         * Ifs anidados
         * Comprobaciones por regex
+        
     * Dificultades con BootStrap
         * Alerts de Bootstrap <!-- Hay que añadir agradecimientos a German y Vanessa -->
         * Colores
