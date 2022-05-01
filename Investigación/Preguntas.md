@@ -79,10 +79,12 @@ Extra:
 
 * Implementa nuevos puntos sobre bootstrap que hayas descubierto durante tu investigación y creas que son importantes.
 
-    Bootstrap dispone de una gran cantida de componentes muy utiles y con un aspecto impecable, algunos de los mas destacables son los siguientes:
+    Bootstrap dispone de una gran cantidad de componentes muy útiles y con un aspecto impecable, algunos de los más destacables son los siguientes:
 
-    * Toasts: Es una especie de notificacion dentro del navegador.
+    * Toasts: Es una alternativa al alert o al modal.
 
     ![toast](../assets/images/M_Captura%202.png)
 
-    
+    * Dropdowns: Es un componente que te permite hacer una especie de menu desplegable.
+
+    ![Dropdown](../assets/images/M_Captura%203.png)
