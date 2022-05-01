@@ -98,9 +98,29 @@ A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios prob
 Ninguno de los dos habíamos usado los imputs de tipo select en un formulario funcional, con lo cual fue un reto descubrir cómo extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
 
 ### Verificacion de formulario y control de flujo
+
 * Ifs anidados:
 
+Esta ha sido la primera vez que tenemos que hacer una verificacion de formulario, para ello hemos usado una serie de ifs anidados, cada uno con su respectivo else de salida, con ello conseguimos que se analicen cada una de las condiciones, si en cualquiera de los puntos se devuelve false, no se envia el resultado del formulario al LocalStorage y te devuelve un alert con el motivo por el que ocurre esto.
+
 * Comprobaciones por regex:
+
+Parte de las verificaciones de formulario pasan por un analisis de los caracteres que envia el formulario, para ello hemos elaborado la siguiente libreria con regex:
+
+``` JavaScript
+const regex = {
+    firstname: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u,
+    email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    psw: {
+        whiteSpace: /^(?=.*\s)/,
+        uppercase: /^(?=.*[A-Z])/,
+        lowercase: /^(?=.*[a-z])/,
+        number: /^(?=.*[0-9])/,
+        length: /^.{8,25}$/,
+    },
+}
+```
+Una de las grandes virtudes de esta libreria es que te permite modularizar la verificacion de contraseñas en partes, y así se le puede devolver al usuario que parte es la que está fallando.
 
 ### Dificultades con BootStrap
 * Alerts de Bootstrap:
