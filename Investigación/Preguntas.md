@@ -81,4 +81,8 @@ Extra:
 
     Bootstrap dispone de una gran cantida de componentes muy utiles y con un aspecto impecable, algunos de los mas destacables son los siguientes:
 
-    * Spinners ![spinner](../assets/images/M_Captura%201.png)
+    * Toasts: Es una especie de notificacion dentro del navegador.
+
+    ![toast](../assets/images/M_Captura%202.png)
+
+    
