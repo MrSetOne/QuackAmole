@@ -91,7 +91,7 @@ También, en el formulario se puede observar como hemos acabado con la cuestión
 
 ### Nav responsive
 
-A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecía la documentación no terminaban de encajar del todo con lo que teníamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde más se nos complicó es a la hora de poner el "Burger Menu" ya que no entendíamos del todo bien como funcionaba la propiedad `Toggler`.
+A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecía la documentación no terminaban de encajar del todo con lo que teníamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde más se nos complicó es a la hora de poner el "Burger Menu" ya que no entendíamos del todo bien cómo funcionaba la propiedad `Toggler`.
 
 ### Implementacion de select en los formularios
 
@@ -101,11 +101,11 @@ Ninguno de los dos habíamos usado los imputs de tipo select en un formulario fu
 
 * Ifs anidados:
 
-Esta ha sido la primera vez que tenemos que hacer una verificacion de formulario, para ello hemos usado una serie de ifs anidados, cada uno con su respectivo else de salida, con ello conseguimos que se analicen cada una de las condiciones, si en cualquiera de los puntos se devuelve false, no se envia el resultado del formulario al LocalStorage y te devuelve un alert con el motivo por el que ocurre esto.
+Esta ha sido la primera vez que tenemos que hacer una verificacion de formulario, para ello hemos usado una serie de ifs anidados, cada uno con su respectivo else de salida, con ello conseguimos que se analicen cada una de las condiciones, si en cualquiera de los puntos se devuelve false, no se envía el resultado del formulario al LocalStorage y te devuelve un alert con el motivo por el que ocurre esto.
 
 * Comprobaciones por regex:
 
-Parte de las verificaciones de formulario pasan por un analisis de los caracteres que envia el formulario, para ello hemos elaborado la siguiente libreria con regex:
+Parte de las verificaciones de formulario pasan por un análisis de los caracteres que envía el formulario, para ello hemos elaborado la siguiente librería con regex:
 
 ``` JavaScript
 const regex = {
@@ -120,12 +120,12 @@ const regex = {
     },
 }
 ```
-Una de las grandes virtudes de esta libreria es que te permite modularizar la verificacion de contraseñas en partes, y así se le puede devolver al usuario que parte es la que está fallando.
+Una de las grandes virtudes de esta librería es que te permite modularizar la verificación de contraseñas en partes, y así se le puede devolver al usuario qué parte es la que está fallando.
 
 ### Dificultades con BootStrap
 * Alerts de Bootstrap:
 
-Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguiamos que funcionaran, por suerte unos compañeros necesitaban ayuda con su codigo e hicimos intercambio de conocimientos :wink: de hecho queriamos aprovechar para agradecer a [Germán](https://github.com/Molerog) y [Vanessa](https://github.com/vaneebg)
+Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguíamos que funcionaran, por suerte unos compañeros necesitaban ayuda con su código e hicimos intercambio de conocimientos :wink: de hecho queriamos aprovechar para agradecer a [Germán](https://github.com/Molerog) y [Vanessa](https://github.com/vaneebg)
 
 * Colores:
 
