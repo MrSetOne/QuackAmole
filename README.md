@@ -83,8 +83,11 @@ Este proyecto fue planteado como un ejercicio sobre la lectura de documentación
 
     - [X] Correo
 
-### Concepto e inspiracion
-<!-- Rebeca: Yo aquí no sé qué poner -->
+### Concepto e inspiración
+
+La temática principal de la página es una fusión de el concepto favorito de cada uno de los autores. En el caso de Rebeca son los patos y para Michael son los aguacates, por tanto, si los patos hacen "Cuack" y los aguacates hacen guacamole, la única opción lógica era llamar a este proyecto "CuackAmole".
+A parte, hemos escogido el color verde ya que es el color que comparten los aguacates y muchas variedades de patos.
+También, en el formulario se puede observar como hemos acabado con la cuestión de género cambiando los viejos y aburridos "hombre" y "mujer" por los nuevos y mejorados "pato" y "aguacate".
 
 ## Retos presentados
 
