@@ -3,16 +3,16 @@
 ## Índice
 
 * Sobre el proyecto
-    * Instalacion y despliegue
-    * Tecnologias usadas
+    * Instalación y despliegue
+    * Tecnologías usadas
     * Origen
     * Objetivos
-    * Concepto e inspiracion
+    * Concepto e inspiración
 
 * Retos presentados
     * Nav responsive
-    * Implementacion de select en los formularios
-    * Verificacion de formulario y control de flujo
+    * Implementación de select en los formularios
+    * Verificación de formulario y control de flujo
         * Ifs anidados
         * Comprobaciones por regex
         
@@ -26,19 +26,24 @@
 
 ## Sobre el proyecto
 
-### Instalacion y despliegue
+### Instalación y despliegue
 
 <!-- FALTA SUBIR LA PAGINA A NETLIFY Y LINKEARLA -->
 
-Para instalar esta pagina solo tienes que tener acceso a internet y ejecutar el comando en consola `git clone https://github.com/MrSetOne/QuackAmole.git`, tambien se puede acceder a través de este enlace: 
+Para instalar esta página sólo necesitas tener acceso a internet y ejecutar el comando en consola `git clone https://github.com/MrSetOne/QuackAmole.git`, también se puede acceder a través de este enlace: 
 
-### Tecnologias usadas
+### Tecnologías usadas
 
-Para esta pagina hemos utilizado HTML, JavaScript y Bootstrap, hemos evitado usar CSS para tratar de masterizar lo maximo posible Bootstrap.
+Para este proyecto hemos utilizado:
+* HTML
+* Bootstrap
+* JavaScript
+ 
+Hemos evitado usar CSS para tratar de masterizar lo máximo posible Bootstrap.
 
 ### Origen
 
-Estre proyecto fue planteado como un ejercicio sobre la lectura de documentacion, adquisicion de nuevos conocimientos de forma autodidacta y manejo del local storage.
+Este proyecto fue planteado como un ejercicio sobre la lectura de documentación, adquisición de nuevos conocimientos de forma autodidacta y manejo del local storage.
 
 ### Objetivos
 
