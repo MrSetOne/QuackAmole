@@ -124,7 +124,9 @@ Una de las grandes virtudes de esta libreria es que te permite modularizar la ve
 
 ### Dificultades con BootStrap
 * Alerts de Bootstrap:
- <!-- Hay que añadir agradecimientos a German y Vanessa -->
+
+Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguiamos que funcionaran, por suerte unos compañeros necesitaban ayuda con su codigo e hicimos intercambio de conocimientos :wink: de hecho queriamos aprovechar para agradecer a [Germán](https://github.com/Molerog) y [Vanessa](https://github.com/vaneebg)
+
 * Colores:
 
 * Estrucutras:
