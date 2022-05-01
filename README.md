@@ -91,11 +91,11 @@ También, en el formulario se puede observar como hemos acabado con la cuestión
 
 ### Nav responsive
 
-A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecía la documentación no terminaban de encajar del todo con lo que teníamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde más se nos complicó es a la hora de poner el "Burger Menu" ya que no entendíamos del todo bien como funcionaba la propiedad `Toggler`.
+A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecia la documentacion no terminaban de encajar del todo con lo que teniamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde mas se nos complicó es a la hora de poner el "Burger Menu" ya que no entendiamos del todo bien como funcionaba la propiedad `Toggler`.
 
 ### Implementacion de select en los formularios
 
-Ninguno de los dos habíamos usado los imputs de tipo select en un formulario funcional, con lo cual fue un reto descubrir cómo extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
+Ninguno de los dos habiamos usado los imputs de tipo select en un formulario funcional, con lo cual fué un reto descubrir como extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
 
 ### Verificacion de formulario y control de flujo
 
@@ -125,7 +125,7 @@ Una de las grandes virtudes de esta libreria es que te permite modularizar la ve
 ### Dificultades con BootStrap
 * Alerts de Bootstrap:
 
-Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguiamos que funcionaran, por suerte unos compañeros necesitaban ayuda con su codigo e hicimos intercambio de conocimientos :wink: de hecho queriamos aprovechar para agradecer a [Germán](https://github.com/Molerog) y [Vanessa](https://github.com/vaneebg)
+Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguiamos que funcionaran, por suerte unos compañeros necesitaban ayuda con su codigo e hicimos intercambio de conocimientos :wink:
 
 * Colores:
 
@@ -137,24 +137,10 @@ Los alerts nos dieron un gran calentamiento de cabeza, ya que no conseguiamos qu
 
 ## Agradecimientos
 
+Un agradecimiento especial a [Germán](https://github.com/Molerog) y [Vanessa](https://github.com/vaneebg) por el intercambio de ideas/conocimientos, si no fuese sin ellos el sistema de alerts aun estaria en pañales.
+
 ## Autores
 
-<!-- ## Nuesto
+### [Michael](https://github.com/MrSetOne)
 
-- [X] Select
- 
-- [X] Validacion de datos
-
-- [X] Showme
-
-- [X] Alerts de Bootstrap
-
-- [X] Radio links nav
-
-- [X] Testear sistema de contraseñas en NodeJs
-
-### Extras
-
-- [ ] Form inputs outline
-
-- [ ] Marcado en rojo de campos vacíos -->
+### [Rebeca](https://github.com/RebecaASuesta)
