@@ -36,7 +36,12 @@ Crea una presentación de bootstrap que solvente las siguientes cuestiones:
     Para cada componente, por lo general, te suelen ofrecer algunas opciones con las que puedes cambiar, la forma, el tamaño y/o el color. Por ejemplo, en el apartado de Card encontramos varias tarjetas con formas diferentes y en el de Buttons tenemos hasta 8 colores entre los que elegir.
 
 * ¿Cuáles son los diferentes tipos de botones en bootstrap? Pon ejemplos.
-    <!-- Mind your own business -->
+
+    Bootstrap ofrece gran variedad de alternativas al botón básico. Puedes cambiar el tamaño o el color (primera imagen), poner un botón desactivado (segunda imagen) u optar por un block button (tercera imagen) los cuales te permiten tener mucho más control sobre su tamaño y posición. No solo eso, si no que en _Button group_ también muestra más opciones para aplicar a un conjunto de botones en vez de a uno solo, como, por ejemplo, para ordenarlos verticalmente (cuarta imagen).
+    ![foto](../assets/images/Captura%204.PNG)
+    ![foto](../assets/images/Captura%205.PNG)
+    ![foto](../assets/images/Captura%206.PNG)
+    ![foto](../assets/images/Captura%207.PNG)
 
 * ¿Qué es un Carousel de bootstrap? Pon un ejemplo.
 
