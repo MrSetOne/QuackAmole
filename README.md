@@ -3,16 +3,16 @@
 ## Índice
 
 * Sobre el proyecto
-    * Instalacion y despliegue
-    * Tecnologias usadas
+    * Instalación y despliegue
+    * Tecnologías usadas
     * Origen
     * Objetivos
-    * Concepto e inspiracion
+    * Concepto e inspiración
 
 * Retos presentados
     * Nav responsive
-    * Implementacion de select en los formularios
-    * Verificacion de formulario y control de flujo
+    * Implementación de select en los formularios
+    * Verificación de formulario y control de flujo
         * Ifs anidados
         * Comprobaciones por regex
         
@@ -26,17 +26,22 @@
 
 ## Sobre el proyecto
 
-### Instalacion y despliegue
+### Instalación y despliegue
 
 Para instalar esta pagina solo tienes que tener acceso a internet y ejecutar el comando en consola `git clone https://github.com/MrSetOne/QuackAmole.git`, tambien se puede acceder a través de [este enlace](https://quackamole.netlify.app/)
 
-### Tecnologias usadas
+### Tecnologías usadas
 
-Para esta pagina hemos utilizado HTML, JavaScript y Bootstrap, hemos evitado usar CSS para tratar de masterizar lo maximo posible Bootstrap.
+Para este proyecto hemos utilizado:
+* HTML
+* Bootstrap
+* JavaScript
+ 
+Hemos evitado usar CSS para tratar de masterizar lo máximo posible Bootstrap.
 
 ### Origen
 
-Estre proyecto fue planteado como un ejercicio sobre la lectura de documentacion, adquisicion de nuevos conocimientos de forma autodidacta y manejo del local storage.
+Este proyecto fue planteado como un ejercicio sobre la lectura de documentación, adquisición de nuevos conocimientos de forma autodidacta y manejo del local storage.
 
 ### Objetivos
 
@@ -76,7 +81,11 @@ Estre proyecto fue planteado como un ejercicio sobre la lectura de documentacion
 
     - [X] Correo
 
-### Concepto e inspiracion
+### Concepto e inspiración
+
+La temática principal de la página es una fusión de el concepto favorito de cada uno de los autores. En el caso de Rebeca son los patos y para Michael son los aguacates, por tanto, si los patos hacen "Cuack" y los aguacates hacen guacamole, la única opción lógica era llamar a este proyecto "CuackAmole".
+A parte, hemos escogido el color verde ya que es el color que comparten los aguacates y muchas variedades de patos.
+También, en el formulario se puede observar como hemos acabado con la cuestión de género cambiando los viejos y aburridos "hombre" y "mujer" por los nuevos y mejorados "pato" y "aguacate".
 
 ## Retos presentados
 
