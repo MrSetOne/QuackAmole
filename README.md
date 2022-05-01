@@ -126,10 +126,12 @@ Una de las grandes virtudes de esta libreria es que te permite modularizar la ve
 * Alerts de Bootstrap:
  <!-- Hay que añadir agradecimientos a German y Vanessa -->
 * Colores:
+
     El outline de los inputs del formulario son azules y no hemos encontrado la manera de cambiarlo a verde como sí sucede en el botón. Esto es debido a que la clase que se utiliza para cambiar el color de este aspecto (class="btn btn-outline-secondary") es solo aplicable a type="button" y no responde cuando la insertas en un input sea del tipo que sea.
 
-* Estrucutras:
-        <!-- Lo que se te ocurra -->
+* Posición elementos del navBar:
+    
+    Otra de las cosas que no hemos podido solucionar debido a la limitación de personalización que ofrece Bootstrap es centrar horizontalmente los links de la barra de navegación manteniendo su responsividad.
 
 ## Agradecimientos
 
