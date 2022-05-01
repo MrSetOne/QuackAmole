@@ -91,11 +91,11 @@ También, en el formulario se puede observar como hemos acabado con la cuestión
 
 ### Nav responsive
 
-A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecia la documentacion no terminaban de encajar del todo con lo que teniamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde mas se nos complicó es a la hora de poner el "Burger Menu" ya que no entendiamos del todo bien como funcionaba la propiedad `Toggler`.
+A la hora de tratar de hacer un nav responsive con Bootstrap tuvimos varios problemas, las plantillas que ofrecía la documentación no terminaban de encajar del todo con lo que teníamos en mente, tras varios intentos y errores finalmente logramos conseguir que tuviese el estilo que tiene actualmente. Donde más se nos complicó es a la hora de poner el "Burger Menu" ya que no entendíamos del todo bien como funcionaba la propiedad `Toggler`.
 
 ### Implementacion de select en los formularios
 
-Ninguno de los dos habiamos usado los imputs de tipo select en un formulario funcional, con lo cual fué un reto descubrir como extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
+Ninguno de los dos habíamos usado los imputs de tipo select en un formulario funcional, con lo cual fue un reto descubrir cómo extraer los datos que necesitabamos del mismo y conseguir que volcase el valor deseado.
 
 ### Verificacion de formulario y control de flujo
 * Ifs anidados:
@@ -106,6 +106,7 @@ Ninguno de los dos habiamos usado los imputs de tipo select en un formulario fun
 * Alerts de Bootstrap:
  <!-- Hay que añadir agradecimientos a German y Vanessa -->
 * Colores:
+    El outline de los inputs del formulario son azules y no hemos encontrado la manera de cambiarlo a verde como sí sucede en el botón. Esto es debido a que la clase que se utiliza para cambiar el color de este aspecto (class="btn btn-outline-secondary") es solo aplicable a type="button" y no responde cuando la insertas en un input sea del tipo que sea.
 
 * Estrucutras:
         <!-- Lo que se te ocurra -->
