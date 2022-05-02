@@ -27,6 +27,17 @@ const dbSync = {
     }
 }
 
+function loadBar(text, color, time) {
+    customAlert.className = `d-grid alert w-50 m-auto alert-${color} text-center fixed-bottom mb-5`
+    customAlert.innerHTML = `${text}
+    <div class="progress mt-2" style="height: 5px;">
+    <div class="progress-bar bg-${color}" style="width:0; animation: progress-bar ${time}s forwards;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>`
+    setTimeout((time) => {
+        customAlert.className = "d-none alert alert-success"
+    }, time * 1000)
+}
+
 // En el caso de que la DB del Local Storage contenga algo la vuelca a hotDB
 if (localStorage.db != undefined) {
     dbSync.toHotDB()
@@ -51,7 +62,13 @@ form.addEventListener("submit", (e) => {
                     hotDB.push(users)
                     dbSync.toLocalStorage()
                     customAlert.className = "d-grid alert w-50 m-auto alert-success text-center fixed-bottom mb-5"
-                    customAlert.innerHTML = `<h4>¡Has sido Quackamoleado con exito!</h4><p>Si quieres ver todos los Quackamoles <a href="./pages/db.html" class="alert-link">pincha aquí</a></p>`
+                    customAlert.innerHTML = `
+                    <h4>¡Has sido Quackamoleado con exito!</h4>
+                    <p>Si quieres ver todos los Quackamoles <a href="./pages/db.html" class="alert-link">pincha aquí</a></p>
+                    <div class="progress mt-2" style="height: 5px;">
+                        <div class="progress-bar bg-success" style="width:0; animation: progress-bar 6s forwards;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>`
                     setTimeout(() => {
                         customAlert.className = "d-none alert alert-success"
                     }, 6000)
@@ -61,11 +78,7 @@ form.addEventListener("submit", (e) => {
                     document.getElementById("contraseña2").value = "";
                     document.getElementById("genero").value = "";
                 } else {
-                    customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-                    customAlert.innerHTML = `Las constraseñas no coinciden, por favor, comprueba que ambas coincidan (T_T)`
-                    setTimeout(() => {
-                        customAlert.className = "d-none alert alert-success"
-                    }, 3000)
+                    loadBar("Las constraseñas no coinciden, por favor, comprueba que ambas coincidan (T_T)", "warning", 3)
                 };
             } else {
                 if (regex.psw.lowercase.test(users.psw1)) {
@@ -73,53 +86,25 @@ form.addEventListener("submit", (e) => {
                         if ((regex.psw.whiteSpace.test(users.psw1)) != true) {
                             if (regex.psw.number.test(users.psw1)) {
                                 if ((regex.psw.length.test(users.psw1)) != true) {
-                                    customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-                                    customAlert.innerHTML = `Tu contraseña tiene que tener entre 8 y 25 caracteres (T_T)`
-                                    setTimeout(() => {
-                                        customAlert.className = "d-none alert alert-success"
-                                    }, 3000)
+                                    loadBar("Tu contraseña tiene que tener entre 8 y 25 caracteres (T_T)", "warning", 3)
                                 }
                             } else {
-                                customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-                                customAlert.innerHTML = `Tu contraseña tiene que tener al menos un numero (T_T)`
-                                setTimeout(() => {
-                                    customAlert.className = "d-none alert alert-success"
-                                }, 3000)
+                                loadBar("Tu contraseña tiene que tener al menos un numero (T_T)", "warning", 3)
                             }
                         } else {
-                            customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-                            customAlert.innerHTML = `Tu contraseña no puede tener espacios en blanco (T_T)`
-                            setTimeout(() => {
-                                customAlert.className = "d-none alert alert-success"
-                            }, 3000)
+                            loadBar("Tu contraseña no puede tener espacios en blanco (T_T)", "warning", 3)
                         }
                     } else {
-                        customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-                        customAlert.innerHTML = `La contraseña tiene que tener al menos una mayuscula (T_T)`
-                        setTimeout(() => {
-                            customAlert.className = "d-none alert alert-success"
-                        }, 3000)
+                        loadBar("La contraseña tiene que tener al menos una mayuscula (T_T)", "warning", 3)
                     }
                 } else {
-                    customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-                    customAlert.innerHTML = `La contraseña tiene que tener al menos una minuscula (T_T)`
-                    setTimeout(() => {
-                        customAlert.className = "d-none alert alert-success"
-                    }, 3000)
+                    loadBar("La contraseña tiene que tener al menos una minuscula (T_T)", "warning", 3)
                 }
             }
         } else {
-            customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-            customAlert.innerHTML = `El nombre/correo no tienen un formato correcto ＞﹏＜`
-            setTimeout(() => {
-                customAlert.className = "d-none alert alert-success"
-            }, 3000)
+            loadBar("El nombre/correo no tienen un formato correcto ＞﹏＜", "warning", 3)
         };
     } else {
-        customAlert.className = "d-grid alert w-50 m-auto alert-warning text-center fixed-bottom mb-5"
-        customAlert.innerHTML = `Rellena todos los campos (ㆆ_ㆆ)`
-        setTimeout(() => {
-            customAlert.className = "d-none alert alert-success"
-        }, 3000)
+        loadBar("Rellena todos los campos (ㆆ_ㆆ)", "warning", 3)
     };
 })
