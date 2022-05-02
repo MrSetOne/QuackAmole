@@ -34,7 +34,7 @@ function printCards() {
 }
 
 if (localStorage.db == undefined) {
-    userCards.innerHTML = `<h1 class="w-100 text-center">Aún no hay ningún Queackamole registrado ＞︿＜</h1>`
+    userCards.innerHTML = `<h1 class="w-100 text-center">Aún no hay ningún Quackamole registrado ＞︿＜</h1>`
 } else {
     printCards();
 }

@@ -38,7 +38,7 @@ Crea una presentación de bootstrap que solvente las siguientes cuestiones:
     </html>
     ```
 
-    Los siguientes pasos serían ir copiando y pegando el codigo de cada componente que queramos implementar, los cuales podemos encontrar en su índice o a través del buscador que encontramos arriba a la derecha.
+    Los siguientes pasos serían ir copiando y pegando el código de cada componente que queramos implementar, los cuales podemos encontrar en su índice o a través del buscador que encontramos arriba a la derecha.
 
     ![foto](../assets/images/Captura%201.PNG)
 

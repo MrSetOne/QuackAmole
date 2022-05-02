@@ -63,7 +63,7 @@ form.addEventListener("submit", (e) => {
                     dbSync.toLocalStorage()
                     customAlert.className = "d-grid alert w-50 m-auto alert-success text-center fixed-bottom mb-5"
                     customAlert.innerHTML = `
-                    <h4>¡Has sido Quackamoleado con exito!</h4>
+                    <h4>¡Has sido Quackamoleado con éxito!</h4>
                     <p>Si quieres ver todos los Quackamoles <a href="./pages/db.html" class="alert-link">pincha aquí</a></p>
                     <div class="progress mt-2" style="height: 5px;">
                         <div class="progress-bar bg-success" style="width:0; animation: progress-bar 6s forwards;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
